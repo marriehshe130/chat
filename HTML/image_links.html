@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, section {
+            padding: 10px;
+            margin: 10px;
+        }
+        header {
+            background-color: burlywood;
+            text-align: center;
+            color: white;
+        }
+        header a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 5px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 10px 0;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu a:hover {
+            background-color: burlywood;
+            color: #555;
+        }
+        .menu img {
+            display: none;
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <a href="http://127.0.0.1:5500/female-tech.jpg">
+            <img src="female-tech.jpg" alt="female-tech" width="200">
+        </a>
+    </header>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <a href="http://127.0.0.1:5500/nature.jpg"><img src="nature.jpg" alt="Nature Image "></a>
+        <a href="http://127.0.0.1:5500/nature.jpg"><img src="nature.jpg" alt="Nature Image "></a>
+    </section>
+    <section class="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#" onclick="showImage('food.jpg')">Pizza</a></li>
+            <li><a href="#" onclick="showImage('sausage.jpg')">Sausage</a></li>
+            <li><a href="#" onclick="showImage('salad.jpg')">Salad</a></li>
+        </ul>
+        <img id="menuImage" src="food.jpg" alt="Menu Image"
+         img id="menuImage" src="food.jpg" alt="pizza Image"
+         img id="menuImage" src="food.jpg" alt="sausage Image">
+    </section>
+    <script>
+        function showImage(imageName) {
+            var menuImage = document.getElementById('menuImage');
+            menuImage.src = 'http://127.0.0.1:5500/' + imageName;
+            menuImage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

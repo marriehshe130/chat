@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Live Support Chat</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+	</head>
+	<body>
+	    <h1>Live Support Chat</h1>
+		<p>The live support chat icon will appear in the bottom-right corner.</p>
+        <a href="#" class="open-chat-widget"><i class="fa-solid fa-comment-dots fa-lg"></i></a>
+        <div class="chat-widget">
+    <div class="chat-widget-header">
+        <a href="#" class="previous-chat-tab-btn">&lsaquo;</a>
+        <a href="#" class="close-chat-widget-btn">&times;</a>
+    </div>
+    <div class="chat-widget-content">
+        <div class="chat-widget-tabs">
+            <div class="chat-widget-tab chat-widget-login-tab">
+                <form action="authenticate.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <div class="msg"></div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="chat-widget-tab chat-widget-conversations-tab"></div>
+            <div class="chat-widget-tab chat-widget-conversation-tab"></div>
+        </div>
+    </div>
+</div>
+        <script>
+        // Place the JS code here
+		</script>
+	</body>
+</html>

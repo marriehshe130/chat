@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <style>
+        p {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .class {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #id {
+            color: white;
+            margin: 0;
+        }
+
+        .introduction {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .skills {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .contact {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .introduction, .skills, .contact {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px;
+            }
+
+            .introduction, .skills, .contact {
+                margin: 5px;
+                padding: 10px;
+            }
+
+            .skills li {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="class">
+    <h1 id="id">Hey!Welcome to my website</h1>
+</header>
+
+<section class="introduction">
+    <h2>Introduction</h2>
+    <p>Hello! My name is Wanjiku Marrieh. I am passionate about technology. Welcome to my personal page!</p>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS </li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+    </ul>
+</section>
+
+<section class="contact">
+    <h2>Contact Information</h2>
+    <p>Email: your.maryw0990@gmail.com</p>
+    <p>Social Media: <a href="https://twitter.com/@MaryWan12167555">Twitter</a>, <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
+</section>
+
+</body>
+</html>
